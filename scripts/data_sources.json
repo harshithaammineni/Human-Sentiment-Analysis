@@ -1,0 +1,6 @@
+{
+  "_comment": "Google Drive file IDs for the MSCTD En-De image archives, sourced from the MSCTD_data/README.md in https://github.com/XL2248/MSCTD . MSCTD uses the same dev and test image archives across En-De and En-Zh.",
+  "train": "1GAZgPpTUBSfhne-Tp0GDkvSHuq6EMMbj",
+  "dev":   "12HM8uVNjFg-HRZ15ADue4oLGFAYQwvTA",
+  "test":  "1B9ZFmSTqfTMaqJ15nQDrRNLqBvo-B39W"
+}
