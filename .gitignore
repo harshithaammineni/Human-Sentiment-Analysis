@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (do NOT commit raw data; only commit processed metadata CSVs)
+data/raw/*
+!data/raw/.gitkeep
+data/faces/*
+!data/faces/.gitkeep
+data/degraded_faces/*
+!data/degraded_faces/.gitkeep
+
+# Model checkpoints (large files)
+outputs/model_checkpoints/*.pth
+outputs/model_checkpoints/*.pt
+outputs/model_checkpoints/*.bin
+!outputs/model_checkpoints/.gitkeep
+
+# Logs / runs
+runs/
+tensorboard_logs/
+wandb/
+
+# Node / presentation dependencies
+node_modules/
+presentation/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# LaTeX build artefacts
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+report/*.toc
+report/*.synctex.gz
+report/*.fls
+report/*.fdb_latexmk
