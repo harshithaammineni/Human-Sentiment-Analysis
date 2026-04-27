@@ -1,0 +1,8 @@
+model,input,accuracy,macro_f1,weighted_f1
+majority baseline,label distribution,0.3791,0.1833,0.2085
+Face ResNet18 (orig),face_resnet18,0.3821,0.378,0.3795
+Face ResNet18 on degraded test,face_resnet18_test_degraded,0.3574,0.3225,0.3214
+Face ResNet18 (aug-trained),face_resnet18_aug_test_original,0.3678,0.3661,0.3652
+Face ResNet18 (aug) on degraded,face_resnet18_aug_test_degraded,0.3661,0.3608,0.3622
+Full-image ResNet50 + MLP,full_image_resnet50,0.3913,0.3624,0.3727
+Fusion MLP,fusion_mlp,0.3891,0.3565,0.3661
