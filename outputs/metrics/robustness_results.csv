@@ -1,0 +1,5 @@
+experiment,accuracy,macro_f1,weighted_f1
+A: original->original,0.3821,0.378,0.3795
+B: original->degraded,0.3574,0.3225,0.3214
+C: aug-trained->original,0.3678,0.3661,0.3652
+C: aug-trained->degraded,0.3661,0.3608,0.3622
