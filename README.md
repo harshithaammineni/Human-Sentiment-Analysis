@@ -19,6 +19,9 @@ full-image context and (extra credit) multimodal text+image fusion.
 > Division of labour is for efficiency only. **Every member must understand
 > the entire pipeline** because the oral exam (40%) directs questions at
 > individual students.
+> Work has been divided for each memebers end of the we had group sessions to complete the task like a team weekly engagement sessions in libraries to share work amoung each other.
+> During Week 7-9 all the group members shared there knowledge with each other and the menthods to approach the task discussions via Microsoft teams
+> Weekly 2 group sessions in personn and 1 review meeting weekly about the task and Final refinements discussions. ( A CLEAR REPORT HAS BEEN PREPARED WITH COMPLETE KNOWLEDGE) 
 
 ## Pipeline overview
 
