@@ -10,11 +10,11 @@ full-image context and (extra credit) multimodal text+image fusion.
 
 | Name | ID | Primary focus |
 |---|---|---|
-| Shaik Sameer | 6944091 | Dataset preparation, GitHub & log management |
-| Ammineni Harshitha | 6952560 | Face extraction & face-based model |
-| Tharigopula Sai Teja | 6945944 | Augmentation & robustness experiments |
-| Kakumanu Ravi Teja | 6905377 | Full-image transfer learning model |
-| Mosi Curran | 6946833 | Fusion model & multimodal extra credit |
+| Shaik Sameer, Kakumanu Ravi Teja  | 6944091 | Dataset preparation, GitHub & log management |
+| Ammineni Harshitha, Kakumanu Ravi Teja | 6952560 | Face extraction & face-based model |
+| Tharigopula Sai Teja,  Mosi Curran | 6945944 | Augmentation & robustness experiments |
+| Kakumanu Ravi Teja, Shaik Sameer | 6905377 | Full-image transfer learning model |
+| Mosi Curran,Tharigopula Sai Teja | 6946833 | Fusion model & multimodal extra credit |
 
 > Division of labour is for efficiency only. **Every member must understand
 > the entire pipeline** because the oral exam (40%) directs questions at
