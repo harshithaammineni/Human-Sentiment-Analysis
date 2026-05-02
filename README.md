@@ -415,6 +415,7 @@ bash scripts/setup_data.sh
 
 # Open in VS Code with Jupyter
 # Kernel: CNN Local CPU (Python 3.13)
+# Average Execution on this project: 1,000 Minutes
 # Run in order: 01 → 02 → 03 → 04 → 05 → 06 → 07
 ```
 
