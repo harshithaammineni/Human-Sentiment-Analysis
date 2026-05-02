@@ -6,3 +6,4 @@ Face ResNet18 (aug-trained),face_resnet18_aug_test_original,0.3678,0.3661,0.3652
 Face ResNet18 (aug) on degraded,face_resnet18_aug_test_degraded,0.3661,0.3608,0.3622
 Full-image ResNet50 + MLP,full_image_resnet50,0.3913,0.3624,0.3727
 Fusion MLP,fusion_mlp,0.3891,0.3565,0.3661
+CLIP multimodal (extra credit),clip_multimodal,0.5703,0.5619,0.5667
