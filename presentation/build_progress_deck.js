@@ -5,7 +5,7 @@ const pptxgen = require("pptxgenjs");
 const pres = new pptxgen();
 pres.layout = "LAYOUT_WIDE"; // 13.3" x 7.5"
 pres.author = "EEEM068 Group - Human Sentiment Analysis";
-pres.title = "AML Project Progress - Week 10";
+pres.title = "AML Project Presentation";
 
 // ---------- Palette ----------
 const NAVY    = "0B1F3A"; // primary dark
@@ -69,7 +69,7 @@ const TOTAL_SLIDES = 10;
     x: 0, y: 0, w: 0.35, h: 7.5, fill: { color: MINT }, line: { color: MINT, width: 0 },
   });
 
-  s.addText("PROJECT PROGRESS REPORT  |  WEEK 10", {
+  s.addText("PROJECT PRESENTATION ", {
     x: 0.9, y: 1.1, w: 11, h: 0.4,
     fontFace: FONT_H, fontSize: 14, bold: true, color: MINT, charSpacing: 8, margin: 0,
   });
@@ -116,7 +116,7 @@ const TOTAL_SLIDES = 10;
   });
 
   // bottom meta
-  s.addText("Module: EEEM068 Applied Machine Learning   |   Convenor: Dr. Sobhan Asasi   |   Friday, 1 May 2026", {
+  s.addText("Module: EEEM068 Applied Machine Learning   |   Convenor: Dr. Sobhan Asasi   |   Friday, 5Th june 2026", {
     x: 0.9, y: 6.95, w: 11.5, h: 0.35,
     fontFace: FONT_B, fontSize: 11, color: "8FA1B5", margin: 0,
   });
@@ -209,10 +209,10 @@ const TOTAL_SLIDES = 10;
     ["01", "Dataset prep",         "DONE",        "0F9D58"],
     ["02", "Face extraction",      "DONE",        "0F9D58"],
     ["03", "Face model (ResNet-18)", "DONE",      "0F9D58"],
-    ["04", "Augmentation & robustness", "RUNNING", CORAL],
-    ["05", "Full-image ResNet-50", "PENDING",     MUTED],
-    ["06", "Late-fusion MLP",      "PENDING",     MUTED],
-    ["07", "CLIP multimodal (extra)", "PENDING",  MUTED],
+    ["04", "Augmentation & robustness", "DONE", "0F9D58"],
+    ["05", "Full-image ResNet-50", "DONE",     "0F9D58"],
+    ["06", "Late-fusion MLP",      "DONE",     "0F9D58"],
+    ["07", "CLIP multimodal (extra)", "DONE",  "0F9D58"],
   ];
 
   // Lay out as 7 cards in a row
@@ -256,7 +256,7 @@ const TOTAL_SLIDES = 10;
   s.addShape(pres.shapes.RECTANGLE, {
     x: 0.5, y: 4.4, w: fillW, h: 0.5, fill: { color: TEAL }, line: { color: TEAL, width: 0 },
   });
-  s.addText("3 of 7 notebooks complete   |   1 currently running   |   3 remaining", {
+  s.addText("7 of 7 notebooks complete), {
     x: 0.5, y: 4.4, w: 12.3, h: 0.5,
     fontFace: FONT_H, fontSize: 13, bold: true, color: PAPER, align: "center", valign: "middle", margin: 0,
   });
@@ -326,6 +326,43 @@ const TOTAL_SLIDES = 10;
       ],
       artefact: "outputs/model_checkpoints/face_resnet18.pth",
     },
+    {
+ {
+  num: "04",
+  title: "Augmentation & Robustness",
+  owner: "sai teja",
+  bullets: [
+    "RandomHorizontalFlip, Rotation(±15°), ColorJitter and RandomCrop applied during training",
+    "Validation performance improved from X.XXX → Y.YYY macro-F1 after augmentation",
+    "Robustness tested under lighting, pose and partial occlusion variations"
+  ],
+  artefact: "outputs/augmentation_robustness/robustness_report.png"
+},
+    {
+  num: "05",
+  title: "Full Image Transfer Learning",
+  owner: "Raviteja",
+  bullets: [
+    "Used pretrained ResNet-18 (ImageNet) as backbone and fine-tuned on full face images",
+    "End-to-end training with all layers unfrozen and class-weighted loss handling imbalance",
+    "Achieved faster convergence compared to training from scratch",
+    "Captured richer spatial features leading to improved emotion separability"
+  ],
+  artefact: "outputs/model_checkpoints/full_image_resnet18.pth"
+},
+    {
+  num: "06",
+  title: "Multimodal CLIP Model",
+  owner: "mosi curan",
+  bullets: [
+    "Employed CLIP (ViT-B/32) to encode facial images and sentiment prompts into shared embedding space",
+    "Performed similarity-based classification using cosine distance between image and text embeddings",
+    "Enabled zero-shot generalization to unseen emotional expressions",
+    "Enhanced semantic consistency compared to supervised-only classifiers"
+  ],
+  artefact: "outputs/clip_model/clip_similarity_matrix.png"
+},
+    
   ];
 
   cards.forEach((c, i) => {
